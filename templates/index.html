@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layer Progression Analyzer</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GPT-2 Layer Analysis</h1>
+        
+        <div class="input-section">
+            <label for="inputText">Enter Text for Analysis:</label>
+            <textarea id="inputText" rows="4" placeholder="Type your text here..."></textarea>
+        </div>
+
+        <button id="submitButton">Analyze Layer Progression</button>
+
+        <div class="results-section">
+            <div class="layer-progression">
+                <h3>Layer Progression Details</h3>
+                <table id="progressionTable">
+                    <thead>
+                        <tr>
+                            <th>Layer</th>
+                            <th>Avg Value</th>
+                            <th>Std Deviation</th>
+                            <th>Importance</th>
+                        </tr>
+                    </thead>
+                    <tbody id="progressionTableBody">
+                        <!-- Dynamically populated results -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="layer-visualization-section">
+                <h3>Layer Importance Visualization</h3>
+                <div id="layerVisualization" class="layer-visualization">
+                    <!-- Circles representing layer importance -->
+                </div>
+            </div>
+
+            <div class="top-words-section">
+                <div id="topWordsContainer">
+                    <!-- Top probable words will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
